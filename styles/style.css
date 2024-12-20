@@ -50,6 +50,14 @@ body, html {
 .content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        white-space: normal; /* Allows breaking into lines on smaller screens */
+        font-size: 2rem; /* Adjust font size for better readability on small screens */
+    }
 }
 
 .content p {
